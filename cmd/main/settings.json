@@ -1,0 +1,79 @@
+{
+    "collection": "0xbd3531da5cf5857e7cfaa92426877b022e612cf8",
+    "discord_webhook": "https://discord.com/api/webhooks/YOUR-DISCORD-WEBHOOK",
+    "encrypted_contract": "0x6D54bd2836C0a2eeC23EBE368877f27CeaDe1346",
+    "encryption_key": "0x597531e0e8c62bfc42506edbe36e5f41f3b3f43e7b93cf58a0ffb564a291bf48",
+    "max_gas": 100,
+    "buying_range": 100,
+    "offer_duration": 1000,
+    "ranges": [
+        {
+            "low": 1,
+            "high": 5,
+            "value": 0.8,
+            "priority_fee": 250
+        },
+        {
+            "low": 6,
+            "high": 10,
+            "value": 0.6,
+            "priority_fee": 200
+        },
+        {
+            "low": 11,
+            "high": 20,
+            "value": 0.5,
+            "priority_fee": 150
+        },
+        {
+            "low": 21,
+            "high": 30,
+            "value": 0.35,
+            "priority_fee": 100
+        },
+        {
+            "low": 31,
+            "high": 40,
+            "value": 0.25,
+            "priority_fee": 60
+        },
+        {
+            "low": 41,
+            "high": 50,
+            "value": 0.2,
+            "priority_fee": 40
+        },
+        {
+            "low": 51,
+            "high": 9999,
+            "value": 0.18,
+            "priority_fee": 25
+        }
+    ],
+
+    "ipfs_gateway": [
+        "https://ipfs.io/ipfs/"
+    ],
+    "base_uri_update_keyword": "setBaseURI(string)",
+    "supply_keyword": "totalSupply()",
+    "tokenURI_keyword": "tokenURI(uint256)",
+    "base_uri_update_abi": "[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"baseURI\",\"type\":\"string\"}],\"name\":\"setBaseURI\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
+    "offset": "",
+    "uses_offset": false,
+    "monitor_offset": false,
+    "increment": 1,
+    "opensea_api": "YOUR_OPENSEA_API_KEY",
+    "alchemy_mainnet_api": "YOUR_ALCHEMY_API_KEY",
+    "etherscan_api": "YOUR_ETHERSCAN_API_KEY",
+    "blur_api" : "YOUR_BLUR_API_KEY",
+
+    "servers": [
+        {
+            "ip": "12.234.56.78",
+            "port": 8080,
+            "timeout": 1000,
+            "max_tasks_ipfs": 200,
+            "max_tasks_custom": 100
+        }
+    ]
+}

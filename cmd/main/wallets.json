@@ -1,0 +1,12 @@
+{
+	"wallet_private_keys": [
+		{
+			"private_key": "YOUR_WALLET_PRIVATE_KEY",
+			"blur_auth_token": "YOUR_BLUR_AUTH_TOKEN"
+		}
+	],
+	"offer_wallet_private_key": {
+		"private_key": "YOUR_WALLET_PRIVATE_KEY",
+		"blur_auth_token": "YOUR_BLUR_AUTH_TOKEN"
+	}
+}
