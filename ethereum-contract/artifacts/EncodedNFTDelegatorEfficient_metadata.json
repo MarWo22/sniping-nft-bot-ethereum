@@ -1,0 +1,325 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_apocalypse",
+						"type": "address"
+					}
+				],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "generateNewKey",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getKey",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRecipient",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "setRecipient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bytes1",
+								"name": "considerationIdentifier",
+								"type": "bytes1"
+							},
+							{
+								"internalType": "bytes1",
+								"name": "offerAmount",
+								"type": "bytes1"
+							},
+							{
+								"internalType": "bytes1",
+								"name": "basicOrderType",
+								"type": "bytes1"
+							},
+							{
+								"internalType": "bytes1",
+								"name": "totalOriginalAdditionalRecipients",
+								"type": "bytes1"
+							},
+							{
+								"internalType": "bytes2",
+								"name": "offerIdentifier",
+								"type": "bytes2"
+							},
+							{
+								"internalType": "bytes4",
+								"name": "startTime",
+								"type": "bytes4"
+							},
+							{
+								"internalType": "bytes4",
+								"name": "endTime",
+								"type": "bytes4"
+							},
+							{
+								"internalType": "bytes20",
+								"name": "considerationToken",
+								"type": "bytes20"
+							},
+							{
+								"internalType": "bytes20",
+								"name": "offerer",
+								"type": "bytes20"
+							},
+							{
+								"internalType": "bytes20",
+								"name": "zone",
+								"type": "bytes20"
+							},
+							{
+								"internalType": "bytes20",
+								"name": "offerToken",
+								"type": "bytes20"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "considerationAmount",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "zoneHash",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "salt",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "offererConduitKey",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "fulfillerConduitKey",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes",
+								"name": "signature",
+								"type": "bytes"
+							},
+							{
+								"components": [
+									{
+										"internalType": "bytes20",
+										"name": "recipient",
+										"type": "bytes20"
+									},
+									{
+										"internalType": "bytes32",
+										"name": "amount",
+										"type": "bytes32"
+									}
+								],
+								"internalType": "struct EncodedNFTDelegatorEfficient.EncodedAditionalRecipientOpenSea[]",
+								"name": "additionalRecipients",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct EncodedNFTDelegatorEfficient.EncodedParametersOpenSea",
+						"name": "_parameters",
+						"type": "tuple"
+					}
+				],
+				"name": "submitOpenSea",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "transferToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdrawAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"main.sol": "EncodedNFTDelegatorEfficient"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces.sol": {
+			"keccak256": "0xf49b3aa711f78f73ae9f498772991a144de42e3dfed2f87f0ca36cc85a45eb33",
+			"urls": [
+				"bzz-raw://a34541e14e0bb72d1cf218b3cb330a272ab419231b8396b73112e65da011177a",
+				"dweb:/ipfs/QmWX7otqHbVNLnzc2EwF6184KBdjeDH4n6kgNN97Fgh3ZW"
+			]
+		},
+		"main.sol": {
+			"keccak256": "0x18db66e5d8e6b017dc26e6fb070e5fbac1b1bd0dbefa612f848ef55fe900316d",
+			"urls": [
+				"bzz-raw://a5920fdca5cb27896d806354973026e567e1ca49ab69c45a23399239435f1147",
+				"dweb:/ipfs/QmRiu7p5jg8RMek8hqANyE6rGMoEhMe5ZfUkRmKun2cdtW"
+			]
+		}
+	},
+	"version": 1
+}
